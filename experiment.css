@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background: #ffeef5;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .tile {
+    width: 60%;
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .tile img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .info-button {
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  /* Unique background colors */
+  .britney {
+    background-color: #ff69b4;
+  }
+  .beyonce {
+    background-color: #8a2be2;
+  }
+  .rihanna {
+    background-color: #00bfff;
+  }
+  
+  /* Hover animations for tiles */
+  .tile:hover {
+    transform: scale(1.02);
+    border: 3px solid #fff;
+  }
+  
+  /* Button hover and click animations */
+  .info-button:hover {
+    background-color: #ffeb3b;
+    transform: scale(1.1);
+  }
+  .info-button:active {
+    background-color: #f44336;
+    transform: scale(0.95);
+  }
+  
+  /* Keyframe animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Audio play button */
+  #play-audio {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #222;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+ 
